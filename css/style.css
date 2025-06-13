@@ -1,0 +1,156 @@
+/* Font */
+
+@font-face {
+    font-family: FigtreeVariable;
+    src: url(./assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+body{
+    background-color: hsl(47, 88%, 63%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.card{
+    width: 80%;
+    margin: 0 auto;
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;
+    border-radius: 30px;
+    border: solid black 1px;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: 10px 9px 4px 0px rgba(0,0,0,1);
+    -webkit-box-shadow: 10px 9px 4px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 10px 9px 4px 0px rgba(0,0,0,1);
+}
+
+.card img{
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.card .tag{
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    background-color: hsl(47, 88%, 63%);
+    width: fit-content;
+    border-radius: 5px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.card .tag:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.card .date{
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+.card h1{
+    font-size: 1.1rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.card h1:hover{
+    color: hsl(47, 88%, 63%);
+    cursor: pointer;
+}
+
+.card .preview-text{
+    margin-bottom: 20px;
+}
+
+.author-info{
+    display: flex;
+    align-items: center;
+}
+
+.author-info img{
+    width: 40px;
+    margin: auto 0;
+    margin-right: 15px;
+}
+
+.author-info p{
+    font-weight: 800;
+    font-size: 0.9rem;
+}
+
+.author-info p:hover{
+    color: hsl(47, 88%, 63%);
+    cursor: pointer;
+}
+
+
+@media (min-width: 426px) {
+    .card{
+        width: 50%;
+    }
+}
+
+@media (min-width: 769px) {
+    .card{
+        width: 30%;
+    }
+}
+
+@media (min-width: 1025px) {
+    .card{
+        width: 20%;
+    }
+
+    .attribution { 
+      font-size: 1rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 1441px) {
+    .card{
+        width: 25%;
+    }
+
+    .card .tag{
+        font-size: 0.7rem;
+    }
+
+    .card .date{
+        font-size: 0.7rem;
+    }
+
+    .card h1{
+        font-size: 1.1rem;
+    }
+
+    .card .preview-text{
+        font-size: 0.7rem;
+    }
+
+    .card .author-info img{
+        width: 2rem;
+    }
+
+    .card .author-info p{
+        font-size: 0.7rem;
+    }
+
+    .attribution { 
+      font-size: 0.7rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+    }
+}
